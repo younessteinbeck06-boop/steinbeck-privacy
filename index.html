@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steinbeck – Inventar App</title>
+  <meta name="description" content="Steinbeck – einfache Inventarverwaltung mit Teamfunktionen">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#141414;
+      --text:#f1f1f1;
+      --muted:#bdbdbd;
+      --gold:#d6b25e;
+      --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,#0b0b0b,#050505);
+      color:var(--text);
+    }
+    header{
+      text-align:center;
+      padding:60px 20px 40px;
+    }
+    header img{
+      width:120px;
+      border-radius:24px;
+      box-shadow:0 15px 40px rgba(0,0,0,.6);
+      margin-bottom:18px;
+    }
+    h1{
+      color:var(--gold);
+      font-size:42px;
+      margin:0;
+      letter-spacing:1px;
+    }
+    .subtitle{
+      color:var(--muted);
+      margin-top:10px;
+      font-size:16px;
+    }
+    main{
+      max-width:900px;
+      margin:0 auto;
+      padding:20px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:28px;
+      margin-bottom:24px;
+      box-shadow:0 20px 40px rgba(0,0,0,.4);
+    }
+    h2{color:var(--gold)}
+    ul{margin-left:20px}
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    a{color:var(--gold); text-decoration:none}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Steinbeck Logo">
+  <h1>Steinbeck</h1>
+  <div class="subtitle">Inventarverwaltung · Teamzugriff · Synchronisation</div>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Über die App</h2>
+    <p>
+      <strong>Steinbeck</strong> ist eine moderne Inventar- und Lagerverwaltungs-App für Unternehmen,
+      Werkstätten und kleine Betriebe.
+    </p>
+    <ul>
+      <li>Produkte mit Name, Bild und Menge verwalten</li>
+      <li>Alphabetisch sortierte Produktübersicht</li>
+      <li>Schnelle Suche</li>
+      <li>Mengen direkt ändern</li>
+      <li>Mitarbeiterkonten mit Rechten</li>
+      <li>Synchronisation auf mehreren Geräten</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Datenschutzerklärung</h2>
+
+    <p><strong>1. Datenspeicherung</strong><br>
+      Daten werden lokal gespeichert oder bei Anmeldung zur Synchronisation genutzt.
+    </p>
+
+    <p><strong>2. Benutzerkonto</strong><br>
+      Die Nutzung ist ohne Konto möglich. Ein Konto dient nur der Synchronisation und Teamverwaltung.
+    </p>
+
+    <p><strong>3. Verarbeitete Daten</strong></p>
+    <ul>
+      <li>E-Mail-Adresse (bei Registrierung)</li>
+      <li>Produktdaten</li>
+      <li>Einstellungen</li>
+    </ul>
+
+    <p><strong>4. Werbung & Tracking</strong><br>
+      Keine Werbung, kein Tracking.
+    </p>
+
+    <p><strong>5. Weitergabe</strong><br>
+      Keine Weitergabe an Dritte.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Kontakt</h2>
+    <p>
+      📧 <a href="mailto:support@steinbeck-app.de">support@steinbeck-app.de</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Steinbeck
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
